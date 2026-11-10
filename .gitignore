@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+credentials.json
+secrets.json
+
+# Build output and test coverage
+dist/
+build/
+out/
+coverage/
+
+# Caches and temporary files
+.cache/
+.parcel-cache/
+.turbo/
+.vite/
+*.tsbuildinfo
+tmp/
+temp/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# Editor and IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Local tool configuration
+.claude/settings.local.json
+.cursor/
+

@@ -1,0 +1,23 @@
+.voice-shell { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 40px; text-align: center; }
+.eyebrow { color: #2563eb; font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.voice-shell h1 { margin: 10px 0 12px; font-size: clamp(2.2rem, 7vw, 4.5rem); font-weight: 750; letter-spacing: -.055em; }
+.intro { color: #64748b; }
+.flow { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 40px 0; padding: 16px; border: 1px solid #dbe4f0; border-radius: 16px; background: #f8fafc; color: #334155; font-size: .85rem; }
+.flow b { color: #94a3b8; }
+.mic-button { min-width: 210px; padding: 16px 24px; border: 0; border-radius: 999px; background: #2563eb; color: white; font: inherit; font-weight: 750; cursor: pointer; box-shadow: 0 12px 28px rgba(37, 99, 235, .24); }
+.mic-button:hover { background: #1d4ed8; }
+.mic-button:disabled { cursor: wait; opacity: .65; }
+.mic-button.listening { background: #dc2626; }
+.mic-icon { margin-right: 10px; }
+.status { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 28px; margin: 14px 0 28px; color: #64748b; font-size: .9rem; }
+.status span { width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; }
+.status.listening span { background: #ef4444; animation: pulse 1s infinite; }
+.status.thinking span, .status.speaking span { background: #2563eb; animation: pulse 1s infinite; }
+.conversation { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; text-align: left; }
+.conversation article { min-height: 130px; padding: 22px; border: 1px solid #dbe4f0; border-radius: 18px; background: white; box-shadow: 0 8px 28px rgba(15, 23, 42, .05); }
+.conversation h2 { margin: 0 0 12px; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.conversation p { color: #475569; }
+.error { margin-top: 20px; color: #b91c1c; }
+.note { margin-top: 24px; color: #94a3b8; font-size: .78rem; }
+@keyframes pulse { 50% { opacity: .25; transform: scale(1.5); } }
+@media (max-width: 640px) { .voice-shell { padding-top: 36px; } .flow { flex-wrap: wrap; } .conversation { grid-template-columns: 1fr; } }
